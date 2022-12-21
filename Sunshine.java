@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
+import java.time.LocalDate;
+import java.util.Date;
 
 public class Sunshine {
     static Scanner inputDevice;
@@ -13,6 +15,8 @@ public class Sunshine {
     }
 
     public static void output(double cHours, double cMinutes, double cCost) {
+        LocalDate today = LocalDate.now();
+        System.out.println("Current Date: " + today);
         System.out.println(CompanyMotto.getMotto());
         System.out.format("%12s%12s    %12s\n","Hours","Minutes","Rental Cost");
         DecimalFormat df = new DecimalFormat("$#,###.##");
