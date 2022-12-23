@@ -10,6 +10,8 @@ public class Sunshine {
         double cMinutes = Calcs2(iMinutes);
         double cCost = Calcs3(cMinutes,iMinutes, cHours);
         output(cHours, cMinutes, cCost);
+
+
     }
 
     public static void output(double cHours, double cMinutes, double cCost) {
@@ -18,6 +20,7 @@ public class Sunshine {
         DecimalFormat df = new DecimalFormat("$#,###.##");
         System.out.format("%12.0f%12.0f    %12s\n", cHours, cMinutes,
                 df.format(cCost));
+        System.out.println("I updated the code");
 
     }
 
